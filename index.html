@@ -47,6 +47,7 @@
             <li><a href="#publications">Publications</a></li>
               <li><a href="#teaching">Teaching</a></li>
             <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#awards">Honors and Awards</a></li>
         </ul>
 	  </div>
@@ -154,8 +155,21 @@
                 <i>Harvard University</i>
                 <p class="faded ww">Sep 2016 - Aug 2018 • 2 yrs</p>
                 <p class="faded ww">Cambridge, Massachusetts, United States</p>
-                <p class="margin-bot">Developing AccelMerger, an early stage design space exploration tools that aims at solving three main challenges in domain System-on-Chip design: automation, flexible granularity and computational pattern reuse/merging. This work is developed under the supervision of Prof. David Brooks.</p>
-                <p class="margin-bot">Also continuing to contribute in the Approximate Computing Space, with a focus on Approximate Linear Algebra applicable to Robotics and Machine Learning..</p>
+                <p class="margin-bot">Developing AccelMerger, an early stage design space exploration tools that aims at solving three main challenges in domain System-on-Chip design: automation, flexible granularity and computational pattern reuse/merging.</p>
+                <p class="margin-bot">This work has three main components:
+                    <ol>
+                        <li>Compiler (LLVM) level function merging techniques that include semantically correct code generation of merged functions that are more profitable when mapped to hardware via HLS than non-merged functions, </li>
+                        <li>Neural Networks cost model to evaluate the feasibility of profitable merges at the IR level to guide the decisions of codegen,</li>
+                        <li>Early Stage design exploration with state of the art optimization techniques such as Integer Linear Programming. This work is developed under the supervision of Prof. David Brooks.</li>
+                    </ol>
+                </p>
+
+                <strong>Silicon Performance Intern</strong><br/>
+                <i>Facebook, Inc.</i>
+                <p class="faded ww">Jun 2021 - Sep 2021 • 3 mos</p>
+                <p class="faded ww">Remote, United States</p>
+                <p class="margin-bot">Early Stage Design Space Exploration of NoC. Helping Facebook AR/VR Sillicon Performance team, in developing Network on Chip models and implement them in Facebook's Early Stage Design Space Exploration tool FARSI. Error in FARSI was reduced from 432.23\% to 7.46\% in memory intense scenarios. The implementation was validated under different latency, number of NoC queues, bus widths, software/hardware configurations. Work developed in collaboration with Amit Kumar and Vivek Venkateshan.</p>
+
 
                 <strong>Research Student</strong><br/>
                 <i>Universitat Politècnica de Catalunya and Bacelona Supercomputing Center</i>
@@ -171,7 +185,7 @@
 
 		The next step was to create hardware support for the approximate task memoization. For example we've identified hashing and the memoization table management as the key overheads in performing coarse grained memoization and the hardware helped speed up many of the applications with aggressive value reuse.</p>
 
-                <strong>Multicore Performance Modelling Research Internship</strong><br/>
+                <strong>Multicore Performance Modelling Research Intern</strong><br/>
                 <i>ARM</i>
                 <p class="faded ww">Oct 2016 - Jan 2017 • 4 mos</p>
                 <p class="faded ww">Cambridge, United Kingdom</p>
@@ -179,7 +193,52 @@
                 <p>This is motivated by the need of leveraging all possible sources of parallelism to exploit the concurrency available in current and future hardware substrates. While many approaches have looked at exploiting loop-level parallelism using different techniques (e.g. thread-level speculation), not much material is available on the limits of parallelisation at coarser granularities.</p>
                 <p class="margin-bot">The first use case for the analysis tools has been simulating the scenario where functions can be invoked asynchronously, and we studied the impact of syscalls and external library calls on the available parallelism (with limited support for data dependency tracking).</p>
 
+                <strong>Visiting Research Student</strong><br/>
+                <i>University of Wisconsin</i>
+                <p class="faded ww">Sep 2017 - Dec 2017 • 4 mos</p>
+                <p class="faded ww">Madison, United States</p>
+                <p class="margin-bot">Increasing parallelism using redundant task elimination. Creating architectural and micro-architectural support in gem5 to support fine grained approximate task memoization. Collaboration with Prof. Gurindar S. Sohi.</p>
+
+                <strong>Research Fellow</strong><br/>
+                <i>Universitat Politècnica de Catalunya</i>
+                <p class="faded ww">Sep 2016 - Jul 2018 • 2 yrs</p>
+                <p class="faded ww">Barcelona, Spain</p>
+                <p class="margin-bot">Approximate Task Memoization in Runtime Systems. Implementing task memoization in the runtime system of the OmpSs parallel programming model.</p>
+
+
             </div>
+
+            <div class="col-md-8">
+                <h2 id="education">Education</h2>
+                <hr>
+
+                <strong>Phd in Computer Science</strong><br/>
+                <i>Harvard University</i>
+                <p class="faded ww">Current</p>
+                <p class="faded ww">Cambridge, MA, United States</p>
+                <p class="margin-bot">GPA: 4.0/4.0</p>
+
+
+                <strong>Master in Innovation and Research in Informatics</strong><br/>
+                <i>Universitat Politècnica de Catalunya</i>
+                <p class="faded ww">Oct 2016</p>
+                <p class="faded ww">Barcelona, Spain</p>
+                <p class="margin-bot">120 ECTS credits. Grade: 9.5/10</p>
+                <p class="margin-bot">Highest Honors: Best Academic Record Award among 36 students.</p>
+
+                <strong>Degree in Informatics Engineering</strong><br/>
+                <i>Universitat Politècnica de Catalunya</i>
+                <p class="faded ww">Jul 2014</p>
+                <p class="faded ww">Barcelona, Spain</p>
+                <p class="margin-bot">240 ECTS credits. Grade: 8.77/10</p>
+                <p class="margin-bot">Highest Honors: Best Academic Record Award among 119 students.</p>
+
+            </div>
+
+
+
+        </div>
+
 
             <div class="col-md-8">
                 <h2 id="awards">Honors and Awards</h2>
@@ -220,7 +279,7 @@
 
             </div>
         </div>
-
+</div>
 
     </div>
     <!-- /.container -->
